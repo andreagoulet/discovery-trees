@@ -27,6 +27,7 @@ Discovery Trees address common task management challenges by:
 - **Breaking overwhelm** — big goals become small, concrete steps
 - **Showing progress** — completed branches give a visual sense of momentum
 - **Supporting late discovery** — new sub-tasks can be added anytime as you learn more
+- **Dynamic prioritization** — priorities live in the tree structure, not in time slots, so when things change you reorder branches instead of rebuilding a schedule
 
 This is especially valuable for people with ADHD or anyone who struggles with traditional flat task lists.
 
@@ -39,8 +40,24 @@ This is especially valuable for people with ADHD or anyone who struggles with tr
 | Mind maps (Miro, etc.) | Good for brainstorming, but lack task status/workflow |
 | Project managers (Asana, etc.) | Hierarchy exists but no guided decomposition process |
 | Outliners (Workflowy, etc.) | Excellent decomposition, but passive — no guidance, no task state, no process |
+| Second brain tools (Obsidian, Notion) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
+| Calendar time-blocking (zero-based budgeting) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
 
 The unique value of a Discovery Tree tool is the **guided decomposition loop** — the software actively walks you through the "Is this actionable?" question rather than passively displaying a tree.
+
+### Dynamic Prioritization
+
+Calendar-based approaches like zero-based time budgeting assume you know in advance what your day looks like. In practice, priorities shift constantly — an inbound lead from a high-profile client, an urgent production issue, a meeting that runs long. When a time-blocked calendar breaks, you have to manually rebuild the whole schedule.
+
+Discovery Trees handle this naturally because **priorities live in the tree structure, not in time slots**. When something urgent arrives:
+
+- Insert the new branch wherever it belongs
+- Reorder siblings to reflect the new priority
+- The guided loop picks it up automatically — no need to rearrange a calendar
+
+The tree doesn't care *when* you work on something, only *what* matters most right now. This makes it inherently resilient to change. The decomposition stays valid even when the schedule doesn't.
+
+Second brain tools like Obsidian and Notion are powerful for capturing and linking knowledge, but they treat tasks as just another note type. There's no guided process for breaking work down, no status propagation, no "what should I do next?" loop. You can build task systems in them (and many people do), but you're assembling it yourself from generic primitives rather than using a tool purpose-built for decomposition and discovery.
 
 ### Workflowy: The Closest Comparison
 

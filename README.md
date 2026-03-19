@@ -1,6 +1,6 @@
 # Discovery Trees
 
-A task management tool based on the Discovery Trees methodology — a mind-map-like approach to visualizing and decomposing work that makes progress visible and decisions simple.
+A task management tool built on the Discovery Trees methodology — where the software actively guides you through decomposing work, dynamically prioritizing what matters, and making progress visible at every level.
 
 ## What Are Discovery Trees?
 
@@ -20,14 +20,13 @@ This cycle of decompose → do → reassess is what makes Discovery Trees a *dis
 
 ## Why This Approach Works
 
-Discovery Trees address common task management challenges by:
-
+- **Guided decomposition** — the software walks you through the "Is this actionable?" question rather than leaving you to organize a blank canvas. This is the core innovation (see [The Guided Decomposition Loop](#the-guided-decomposition-loop) below).
+- **Dynamic prioritization** — priorities live in the tree structure, not in time slots. When something urgent arrives, insert a branch and reorder — the guided loop picks it up automatically. No need to rebuild a calendar. (See [Dynamic Prioritization](#dynamic-prioritization) below.)
 - **Externalizing memory** — the tree holds the plan so your brain doesn't have to
 - **Eliminating decision fatigue** — the next action is always visible
 - **Breaking overwhelm** — big goals become small, concrete steps
 - **Showing progress** — completed branches give a visual sense of momentum
 - **Supporting late discovery** — new sub-tasks can be added anytime as you learn more
-- **Dynamic prioritization** — priorities live in the tree structure, not in time slots, so when things change you reorder branches instead of rebuilding a schedule
 
 This is especially valuable for people with ADHD or anyone who struggles with traditional flat task lists.
 
@@ -43,22 +42,6 @@ This is especially valuable for people with ADHD or anyone who struggles with tr
 | Second brain tools (Obsidian, Notion) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
 | Calendar time-blocking (zero-based budgeting) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
 
-The unique value of a Discovery Tree tool is the **guided decomposition loop** — the software actively walks you through the "Is this actionable?" question rather than passively displaying a tree.
-
-### Dynamic Prioritization
-
-Calendar-based approaches like zero-based time budgeting assume you know in advance what your day looks like. In practice, priorities shift constantly — an inbound lead from a high-profile client, an urgent production issue, a meeting that runs long. When a time-blocked calendar breaks, you have to manually rebuild the whole schedule.
-
-Discovery Trees handle this naturally because **priorities live in the tree structure, not in time slots**. When something urgent arrives:
-
-- Insert the new branch wherever it belongs
-- Reorder siblings to reflect the new priority
-- The guided loop picks it up automatically — no need to rearrange a calendar
-
-The tree doesn't care *when* you work on something, only *what* matters most right now. This makes it inherently resilient to change. The decomposition stays valid even when the schedule doesn't.
-
-Second brain tools like Obsidian and Notion are powerful for capturing and linking knowledge, but they treat tasks as just another note type. There's no guided process for breaking work down, no status propagation, no "what should I do next?" loop. You can build task systems in them (and many people do), but you're assembling it yourself from generic primitives rather than using a tool purpose-built for decomposition and discovery.
-
 ### Workflowy: The Closest Comparison
 
 Workflowy is the closest existing tool — both are infinite outliners with hierarchical decomposition. The overlap is real: infinite nesting, zoom into any node, frictionless child creation, collapse/expand. But the differences are fundamental:
@@ -70,6 +53,22 @@ Workflowy is the closest existing tool — both are infinite outliners with hier
 
 In short: Workflowy nails decomposition but is entirely missing the guided part. It's a blank canvas, not a coach.
 
+### Second Brain Tools: Obsidian and Notion
+
+Obsidian and Notion are powerful for capturing and linking knowledge, but they treat tasks as just another note type. There's no guided process for breaking work down, no status propagation, no "what should I do next?" loop. You can build task systems in them (and many people do), but you're assembling it yourself from generic primitives rather than using a tool purpose-built for decomposition and discovery.
+
+### Dynamic Prioritization
+
+Calendar-based approaches like zero-based time budgeting assume you know in advance what your day looks like. In practice, priorities shift constantly — an inbound lead from a high-profile client, an urgent issue, a meeting that runs long. When a time-blocked calendar breaks, you have to manually rebuild the whole schedule.
+
+Discovery Trees handle this naturally because **priorities live in the tree structure, not in time slots**. When something urgent arrives:
+
+- Insert the new branch wherever it belongs
+- Reorder siblings to reflect the new priority
+- The guided loop picks it up automatically — no need to rearrange a calendar
+
+The tree doesn't care *when* you work on something, only *what* matters most right now. This makes it inherently resilient to change. The decomposition stays valid even when the schedule doesn't.
+
 ## Requirements
 
 ### Core Data Model
@@ -80,19 +79,9 @@ In short: Workflowy nails decomposition but is entirely missing the guided part.
 - A node is "actionable" when it's leaf-sized — small enough to start right now
 - Completing all children may auto-complete the parent, or require explicit confirmation
 
-### Key Interactions
-
-- **Guided decomposition** — the central UX prompts: "Is this small enough to do right now?" → Yes (start) or No (break it down)
-- **Quick decomposition** — adding child nodes must be frictionless
-- **Navigation** — zoom into a subtree or zoom out to see the big picture
-- **Reordering/prioritizing** among sibling nodes
-- **Progress visualization** — see at a glance what's done, in progress, and remaining
-
 ### The Guided Decomposition Loop
 
 The guided loop is the core innovation — the thing that separates this from every outliner and task manager. The software doesn't just display a tree; it actively walks you through it.
-
-The loop works like this:
 
 1. **Focus** — the system presents a single node and asks: "Is this small enough to start right now?"
 2. **Decide** — Yes → mark it "in progress" and start working. No → break it down.
@@ -118,8 +107,6 @@ Beyond the guided loop, AI can play a key role in tree management:
 The user should always see what the AI plans to do before it reshuffles the tree (like a diff preview), preserving trust and agency.
 
 ### Platform Direction
-
-The planned approach is:
 
 1. **CLI first** — nail the data model and guided loop logic with a minimal command-line prototype. This validates the core experience before investing in UI.
 2. **Web app** — the real product, with keyboard-first navigation, voice-to-text input (via the Web Speech API), and AI-assisted organization. Web is the right platform because voice input, AI diff previews, and brain-dump mode are all much more natural in a browser.

@@ -34,28 +34,13 @@ This is especially valuable for people with ADHD or anyone who struggles with tr
 
 | Tool Type | Limitation |
 |---|---|
-| Flat task lists (Todoist, etc.) | No hierarchy; can't model decomposition |
-| Kanban boards (Trello, etc.) | Good for workflow status, poor for breaking down work |
-| Mind maps (Miro, etc.) | Good for brainstorming, but lack task status/workflow |
-| Project managers (Asana, etc.) | Hierarchy exists but no guided decomposition process |
-| Outliners (Workflowy, etc.) | Excellent decomposition, but passive — no guidance, no task state, no process |
-| Second brain tools (Obsidian, Notion) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
+| Flat task lists ([Todoist](https://todoist.com), etc.) | No hierarchy; can't model decomposition |
+| Kanban boards ([Trello](https://trello.com), etc.) | Good for workflow status, poor for breaking down work |
+| Mind maps ([Miro](https://miro.com), etc.) | Good for brainstorming, but lack task status/workflow |
+| Project managers ([Asana](https://asana.com), etc.) | Hierarchy exists but no guided decomposition process |
+| Outliners ([Workflowy](https://workflowy.com), etc.) | Excellent decomposition, but passive — no guidance, no task state, no process |
+| Second brain tools ([Obsidian](https://obsidian.md), [Notion](https://notion.so)) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
 | Calendar time-blocking (zero-based budgeting) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
-
-### Workflowy: The Closest Comparison
-
-Workflowy is the closest existing tool — both are infinite outliners with hierarchical decomposition. The overlap is real: infinite nesting, zoom into any node, frictionless child creation, collapse/expand. But the differences are fundamental:
-
-- **Passive vs. active** — Workflowy is a blank canvas. Discovery Trees actively drive a cognitive loop, prompting "Is this small enough to start right now?" at each node. That single question forces a binary decision: either produce action or decompose further.
-- **Task state as a first-class concept** — Workflowy nodes are just text. Discovery Trees treat status (not started, in progress, done, blocked) as core — it's how progress propagates up the tree and how the system knows what to prompt you about next.
-- **Navigation with intent** — In Workflowy you browse. In Discovery Trees, the system guides you — after completing a task, it surfaces the next sibling or walks you back up to the parent. You're not choosing where to look; the tree tells you where attention is needed.
-- **Progress visualization** — Workflowy shows structure. Discovery Trees show *momentum* — which branches are complete, which are stalled, where the frontier of work is.
-
-In short: Workflowy nails decomposition but is entirely missing the guided part. It's a blank canvas, not a coach.
-
-### Second Brain Tools: Obsidian and Notion
-
-Obsidian and Notion are powerful for capturing and linking knowledge, but they treat tasks as just another note type. There's no guided process for breaking work down, no status propagation, no "what should I do next?" loop. You can build task systems in them (and many people do), but you're assembling it yourself from generic primitives rather than using a tool purpose-built for decomposition and discovery.
 
 ### Dynamic Prioritization
 

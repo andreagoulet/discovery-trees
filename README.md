@@ -34,13 +34,13 @@ This is especially valuable for people with ADHD or anyone who struggles with tr
 
 | Tool Type | Limitation |
 |---|---|
-| Flat task lists ([Todoist](https://todoist.com), etc.) | No hierarchy; can't model decomposition |
+| Flat task lists ([Todoist](https://todoist.com), [Google Tasks](https://support.google.com/tasks), etc.) | No hierarchy; can't model decomposition |
 | Kanban boards ([Trello](https://trello.com), etc.) | Good for workflow status, poor for breaking down work |
 | Mind maps ([Miro](https://miro.com), etc.) | Good for brainstorming, but lack task status/workflow |
 | Project managers ([Asana](https://asana.com), etc.) | Hierarchy exists but no guided decomposition process |
 | Outliners ([Workflowy](https://workflowy.com), etc.) | Excellent decomposition, but passive — no guidance, no task state, no process |
 | Second brain tools ([Obsidian](https://obsidian.md), [Notion](https://notion.so)) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
-| Calendar time-blocking (zero-based budgeting) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
+| Calendar time-blocking ([Akiflow](https://akiflow.com), [Sunsama](https://sunsama.com), [Reclaim](https://reclaim.ai)) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
 
 ### Dynamic Prioritization
 

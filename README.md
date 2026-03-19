@@ -133,6 +133,91 @@ The CLI becomes the backend prototype, not the product.
 3. **Integration** — Import/export with Todoist, GitHub Issues, etc.?
 4. **Visualization** — Horizontal tree? Vertical? Zoomable canvas?
 
+## MVP: The Guided Loop on the CLI
+
+The goal of the first build session is to create the smallest thing that lets you *experience* the guided decomposition loop — not design it in the abstract, but feel it with real tasks. The tool itself is being built using the Discovery Tree methodology: start simple, use it, and let the reactions guide what to build next.
+
+### What the MVP does
+
+1. Create a new tree with a root goal
+2. The system asks: "Is this small enough to start right now?"
+3. **Yes** → marks it "in progress"
+4. **No** → prompts you to add child tasks, then recurses into the first child
+5. Mark a task done → system moves to the next sibling (or back up to the parent)
+6. Print the tree after each step so you can see where you are
+
+That's it. No AI, no voice, no fancy rendering. Just the loop.
+
+### Example session
+
+```
+$ dt new "Launch landing page"
+
+🌱 New tree: Launch landing page
+
+Is "Launch landing page" small enough to start right now? (y/n): n
+
+What needs to happen first? (enter tasks, blank line to finish):
+> Write the copy
+> Design the hero section
+> Set up hosting
+
+Added 3 children. Focusing on the first one...
+
+Launch landing page
+├── → Write the copy
+├── ○ Design the hero section
+└── ○ Set up hosting
+
+Is "Write the copy" small enough to start right now? (y/n): y
+
+✅ "Write the copy" is now in progress. Let me know when you're done.
+
+$ dt done
+
+✅ "Write the copy" is complete!
+
+Launch landing page
+├── ✅ Write the copy
+├── → Design the hero section
+└── ○ Set up hosting
+
+Is "Design the hero section" small enough to start right now? (y/n): n
+
+What needs to happen first? (enter tasks, blank line to finish):
+> Pick a layout
+> Choose images
+
+Launch landing page
+├── ✅ Write the copy
+├── 🔵 Design the hero section
+│   ├── → Pick a layout
+│   └── ○ Choose images
+└── ○ Set up hosting
+
+Is "Pick a layout" small enough to start right now? (y/n): y
+
+✅ "Pick a layout" is now in progress.
+```
+
+### What to pay attention to while using it
+
+The MVP is a discovery tool for its own requirements. While using it, notice your reactions:
+
+- "I lost track of where I am" → we need better navigation
+- "I want to see the whole tree" → we need a zoom-out view
+- "That felt like too many steps" → the loop is too rigid
+- "I want to go back to something else" → we need free navigation, not just linear flow
+- "I wish it would suggest tasks for me" → that's the AI feature
+
+These reactions are the real requirements. Write them down as you go — they're more valuable than any spec written in advance.
+
+### Technical starting point
+
+- **Language**: TBD (discuss with your pairing partner)
+- **Storage**: JSON file on disk (simplest possible persistence)
+- **Scope**: just the loop above — no config, no undo, no multiple trees
+
 ## References
 
 - [Discovery Trees: Visualizing Tasks (Software as Craft)](https://softwareascraft.com/adhd/discovery-trees-visualizing-tasks/)

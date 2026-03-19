@@ -32,15 +32,15 @@ This is especially valuable for people with ADHD or anyone who struggles with tr
 
 ## How This Differs From Existing Tools
 
-| Tool Type | Limitation |
-|---|---|
-| Flat task lists ([Todoist](https://todoist.com), [Google Tasks](https://support.google.com/tasks), [Microsoft To Do](https://todo.microsoft.com)) | No hierarchy; can't model decomposition |
-| Kanban boards ([Trello](https://trello.com), [GitHub Projects](https://github.com/features/issues), [Kanbanize](https://kanbanize.com)) | Good for workflow status, poor for breaking down work |
-| Mind maps ([Miro](https://miro.com), [MindMeister](https://www.mindmeister.com), [XMind](https://xmind.app)) | Good for brainstorming, but lack task status/workflow |
-| Project managers ([Asana](https://asana.com), [Jira](https://www.atlassian.com/software/jira), [Monday.com](https://monday.com)) | Hierarchy exists but no guided decomposition process |
-| Outliners ([Workflowy](https://workflowy.com), [Dynalist](https://dynalist.io), [Logseq](https://logseq.com)) | Excellent decomposition, but passive — no guidance, no task state, no process |
-| Second brain tools ([Obsidian](https://obsidian.md), [Notion](https://notion.so), [Roam Research](https://roamresearch.com)) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
-| Calendar time-blocking ([Akiflow](https://akiflow.com), [Sunsama](https://sunsama.com), [Reclaim](https://reclaim.ai)) | Forces commitment to specific time slots, but brittle when priorities shift — one unexpected change cascades through the whole schedule |
+| Tool Type | Examples | Limitation |
+|---|---|---|
+| Flat task lists | [Todoist](https://todoist.com), [Google Tasks](https://support.google.com/tasks), [Microsoft To Do](https://todo.microsoft.com) | No hierarchy; can't model decomposition |
+| Kanban boards | [Trello](https://trello.com), [GitHub Projects](https://github.com/features/issues), [Kanbanize](https://kanbanize.com) | Good for workflow status, poor for breaking down work |
+| Mind maps | [Miro](https://miro.com), [MindMeister](https://www.mindmeister.com), [XMind](https://xmind.app) | Good for brainstorming, but lack task status/workflow |
+| Project managers | [Asana](https://asana.com), [Jira](https://www.atlassian.com/software/jira), [Monday.com](https://monday.com) | Hierarchy exists but no guided decomposition process |
+| Outliners | [Workflowy](https://workflowy.com), [Dynalist](https://dynalist.io), [Logseq](https://logseq.com) | Excellent decomposition, but passive — no guidance, no task state, no process |
+| Second brain tools | [Obsidian](https://obsidian.md), [Notion](https://notion.so), [Roam Research](https://roamresearch.com) | Rich knowledge management, but tasks are an afterthought — no decomposition loop, no guided workflow |
+| Calendar time-blocking | [Akiflow](https://akiflow.com), [Sunsama](https://sunsama.com), [Reclaim](https://reclaim.ai) | Forces commitment to specific time slots, but brittle when priorities shift |
 
 ### Dynamic Prioritization
 

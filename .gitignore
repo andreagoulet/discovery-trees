@@ -1,5 +1,6 @@
 .claude/skills/bdd-with-approvals/
 .claude/skills/approval-tests/
+.claude/skills/tdd/
 
 # Python
 __pycache__/

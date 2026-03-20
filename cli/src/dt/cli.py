@@ -1,5 +1,10 @@
+import sys
+
+
 def main():
-    print("dt")
+    args = sys.argv[1:]
+    if args and args[0] == "show":
+        print("No tasks yet.")
 
 
 if __name__ == "__main__":

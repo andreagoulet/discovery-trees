@@ -39,10 +39,12 @@ The user should always see what the AI plans to do before it reshuffles the tree
 
 ## Platform Direction
 
-1. **CLI first** — nail the data model and guided loop logic with a minimal command-line prototype. This validates the core experience before investing in UI.
-2. **Web app** — the real product, with keyboard-first navigation, voice-to-text input (via the Web Speech API), and AI-assisted organization. Web is the right platform because voice input, AI diff previews, and brain-dump mode are all much more natural in a browser.
+Two complementary pieces:
 
-The CLI becomes the backend prototype, not the product.
+1. **CLI (`dt`)** — a tool for AI agents (primarily Claude Code) to create and manage trees. Commands like `dt new`, `dt decompose`, `dt complete` give the AI structured operations on the tree. The CLI can also print trees in ASCII/tree format for human review, but its primary consumer is AI, not humans.
+2. **Web UI** — the human-facing product for displaying and interacting with discovery trees. Keyboard-first navigation, voice-to-text input, AI-assisted organization. This comes later, once the data model and tree operations are solid.
+
+The two share a common tree format (TBD) so the CLI can manage trees that the web UI displays.
 
 ## Open Design Questions
 

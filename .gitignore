@@ -1,2 +1,10 @@
 .claude/skills/bdd-with-approvals/
 .claude/skills/approval-tests/
+
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+
+# Approval tests
+*.received.*

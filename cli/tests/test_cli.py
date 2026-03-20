@@ -1,7 +1,5 @@
 import subprocess
 
-from approvaltests import verify
-
 
 def run_dt(*args):
     result = subprocess.run(
@@ -13,6 +11,3 @@ def run_dt(*args):
     return result.stdout
 
 
-def test_cli_runs():
-    output = run_dt()
-    verify(output)

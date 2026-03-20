@@ -8,6 +8,18 @@ Add new decisions at the top so the most recent are first. Include the date, the
 
 ---
 
+### 2026-03-19 — Outside-in development with approval tests
+
+**Decision**: Drive development outside-in, feature by feature, using approval tests (approvaltests library) to capture CLI output as the verified behavior.
+
+**Why**: Approval tests let us see and approve the exact user experience before locking it in. Outside-in keeps us focused on what the user sees rather than internal structure.
+
+### 2026-03-19 — Python for CLI, TypeScript for web app
+
+**Decision**: CLI prototype in Python, web app in TypeScript. Top-level `cli/` and `web/` directories.
+
+**Why**: Python is simple to get a CLI running (no build step), and the approval-tests library has strong Python support. TypeScript is the natural choice for the web app later. Separating into `cli/` and `web/` keeps them cleanly independent.
+
 ### 2026-03-19 — CLI first, then web app
 
 **Decision**: Build a CLI prototype first to validate the guided decomposition loop, then build the real product as a web app.
